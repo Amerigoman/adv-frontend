@@ -1,0 +1,7 @@
+{
+  "name": "amerigoman",
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "handlebars": "^4.0.5"
+  }
+}

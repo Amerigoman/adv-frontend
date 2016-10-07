@@ -1,0 +1,10 @@
+{
+  "name": "share-photo",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "bower": "^1.7.7"
+  }
+}

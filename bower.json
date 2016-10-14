@@ -1,7 +1,17 @@
 {
+  
   "name": "amerigoman",
+  
   "dependencies": {
+    
     "jquery": "~2.2.0",
-    "handlebars": "^4.0.5"
+    
+    "handlebars": "^4.0.5", 
+    "underscore "
+: "1.8.3", 
+    "backbone": "^1.x",
+    "react": ">1.1.0",
+    "angular": ""
   }
+
 }

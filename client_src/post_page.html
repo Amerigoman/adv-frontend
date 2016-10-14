@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ADV_FE APP | Lesson1 | POST_PAGE</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="layout">
+
+            <div class="content">
+                <div class="posts-container">
+                    <div class="posts-container__post">
+                    </div>
+                    <div class="posts-container__comment">
+                    </div>
+                    <div class="posts-container__related-post">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+            </div>
+        </div>
+
+        <!-- get post 2
+            {{posts.[2].[description]}}
+            {{{posts.[2].[description]}}}
+
+            <div>
+                <b>with: </b>
+                {{#with posts.[2]}}
+                    {{description}}
+                {{/with}}
+            </div>
+            {{{{raw-helper}}}}
+              {{bar}}
+            {{{{/raw-helper}}}}
+        -->
+
+        <script type="text/x-handlebars-template" id="posts-container__post-template">
+            <div class data-id="{{id}}">
+                <div class>
+                    <div class>
+                        <img class="post-preview__img" src="{{imgUrl}}"></img>
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td><strong>{{userId}}: </strong></td><td>{{{description}}}</td>
+                            </tr>
+                        </table>                    
+                    </div>
+                    <!-- <div class="post-preview__description">{{{description}}}</div> -->
+                </div>
+            </div>
+        </script>
+
+        <script type="text/x-handlebars-template" id="posts-container__comment-template">
+            {{#each comment}}
+                {{> comment-list }}
+            {{/each}}
+        </script>
+
+        <script type="text/x-handlebars-template" id="comment-list-template">
+            <div>
+                <table>
+                    <tr>
+                        <td><strong>{{username}}: </strong></td><td>{{{text}}}</td>
+                    </tr>
+                </table>                    
+            </div>
+        </script>
+
+
+
+        <script type="text/x-handlebars-template" id="posts-container__related-post-template">
+            {{#each relatedPosts}}
+                {{> related-post class="posts-container__post" }}
+            {{/each}}
+        </script>
+
+        <script type="text/x-handlebars-template" id="related-post-template">
+            <div class="post-preview {{class}}" data-id="{{id}}">
+                <div class="post-preview__island">
+                    <div class="post-preview__img-wrapper">
+                        <a href="post_page.html?id={{id}}">
+                            <img class="post-preview__img" src="{{imgUrl}}"></img>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <script src="jquery/dist/jquery.js"></script>
+        <script src="handlebars/handlebars.js"></script>
+        <script src="data.js"></script>
+        <script src="related_posts.js"></script>
+    </body>
+</html>

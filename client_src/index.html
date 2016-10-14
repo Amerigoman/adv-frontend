@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ADV_FE APP | Lesson1 | Stage 2</title>
+        <title>ADV_FE APP | Lesson1</title>
         <link rel="stylesheet" href="style.css" />
     </head>
 
@@ -66,7 +66,9 @@
             <div class="post-preview {{class}}" data-id="{{id}}">
                 <div class="post-preview__island">
                     <div class="post-preview__img-wrapper">
-                        <img class="post-preview__img" src="{{imgUrl}}"></img>
+                        <a href="post_page.html?id={{id}}">
+                            <img class="post-preview__img" src="{{imgUrl}}"></img>
+                        </a>
                     </div>
                     <div class="post-preview__description">{{{description}}}</div>
                 </div>

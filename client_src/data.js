@@ -1,5 +1,9 @@
 (function () {
     var global = window;
+
+    var snippet = rand(0, 27);
+    var AMOUNT_RELATED_POSTS = 9;
+
     global.Data = {
         getUser: function (userId) {
             return users.filter(function (user) {
@@ -10,7 +14,7 @@
             return posts;
         },
         getRelatedPosts: function () {
-            return posts.slice(5, 14);
+            return posts.slice(snippet, snippet + AMOUNT_RELATED_POSTS);
         },
         getPostComments: function () {
             return [{
@@ -32,6 +36,10 @@
             }) : this.getPosts() )[0];
         }
     };
+
+    function rand(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
 
     var posts = [
         {

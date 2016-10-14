@@ -207,3 +207,8 @@ a {
 .comment {
     margin: 10px 0;
 }
+
+div table tr td {
+    text-align: justify;
+    vertical-align: top;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ADV_FE APP | Lesson1 | JSON</title>
+    </head>
+
+    <body>
+        <div class="posts-json">            
+        </div>
+        <div class="posts-table">            
+        </div>
+        
+
+        <script type="text/x-handlebars-template" id="posts-json-template">
+            <pre>{{json posts}}</pre>
+        </script>
+
+        <script type="text/x-handlebars-template" id="posts-table-template">
+            {{#table posts}}
+                {{description}}
+            {{/table}}
+        </script>
+
+        <script src="jquery/dist/jquery.js"></script>
+        <script src="handlebars/handlebars.js"></script>
+        <script src="data.js"></script>
+        <script src="test.js"></script>
+    </body>
+</html>

@@ -37,12 +37,14 @@ a {
     cursor: pointer;
     color: #127287;
     -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
 
 .application-logo {
     float: left;
-    background: url( 'app_logo.png' ) no-repeat;
+    background: url( '../img/app_logo.png' ) no-repeat;
     background-size: 100px 100px;
     display: inline-block;
     width: 100px;

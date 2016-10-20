@@ -1,0 +1,6 @@
+﻿{
+	"disallowMultipleVarDecl": true,
+	"disallowSpacesInsideObjectBrackets": true,
+	"disallowMultipleSpaces": true,
+	"excludeFiles": ["excluded.js"]
+}

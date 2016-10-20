@@ -1,22 +1,35 @@
 {
-
   "name": "share-photo",
-
   "version": "0.0.1",
-
   "dependencies": {
-
     "express": "^4.13.3"
-
   },
 
   "devDependencies": {
-
-    "bower": "^1.7.7"
-
+    "bower": "^1.7.7",
+    "gulp": "^3.9.1",
+    "gulp-bower": "latest",
+    "gulp-if": "latest",
+    "gulp-concat": "latest",
+    "gulp-less": "latest",
+    "yargs": "latest",
+    "gulp-debug": "latest",
+    "gulp-clean": "latest",
+    "gulp-livereload": "3.8.1",
+    "gulp-csscomb": "latest",
+    "run-sequence": "0.3.2",
+    "gulp-cssnano": "latest",
+    "gulp-uglify": "2.0.0",
+    "gulp-jscs": "4.0.0",
+    "gulp-jshint": "2.0.1",
+    "gulp-htmlhint": "0.3.1",
+    "gulp-htmlmin": "3.0.0",
+    "browser-sync": "2.17.5",
+    "gulp-autoprefixer": "3.1.1",
+    "gulp-sourcemaps": "2.1.1"
   },
+
   "scripts": {
     "start" : "node"
   }
-
 }

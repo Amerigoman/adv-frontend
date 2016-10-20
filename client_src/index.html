@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>ADV_FE APP | Lesson1</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/style.css" />
     </head>
 
     <body>
@@ -41,21 +41,6 @@
             </div>
         </div>
 
-        <!-- get post 2
-            {{posts.[2].[description]}}
-            {{{posts.[2].[description]}}}
-
-            <div>
-                <b>with: </b>
-                {{#with posts.[2]}}
-                    {{description}}
-                {{/with}}
-            </div>
-            {{{{raw-helper}}}}
-              {{bar}}
-            {{{{/raw-helper}}}}
-        -->
-
         <script type="text/x-handlebars-template" id="posts-container__list-template">
             {{#each posts}}
                 {{> post-preview class="posts-container__post" }}
@@ -66,7 +51,7 @@
             <div class="post-preview {{class}}" data-id="{{id}}">
                 <div class="post-preview__island">
                     <div class="post-preview__img-wrapper">
-                        <a href="post_page.html?id={{id}}">
+                        <a href="templates/post_page.html?id={{id}}">
                             <img class="post-preview__img" src="{{imgUrl}}"></img>
                         </a>
                     </div>
@@ -86,9 +71,9 @@
             </div>
         </script>
 
-        <script src="jquery/dist/jquery.js"></script>
-        <script src="handlebars/handlebars.js"></script>
-        <script src="data.js"></script>
-        <script src="posts.js"></script>
+        <script src="libs/jquery/dist/jquery.min.js"></script>
+        <script src="libs/handlebars/handlebars.min.js"></script>
+        <script src="js/data.js"></script>
+        <script src="js/posts.js"></script>
     </body>
 </html>

@@ -12,7 +12,7 @@ $( document ).ready( function () {
     Handlebars.registerHelper( "nav", function( count, selected, options ) {
         var numbers = '';
         for(var i = 0; i < count; i++) {
-            numbers += options.fn( { number: i + 1, selected: selectedPage == i } );
+            numbers += options.fn( {number: i + 1, selected: selectedPage == i} );
         }
         
         return numbers;
@@ -59,7 +59,7 @@ $( document ).ready( function () {
             renderPosts();
             renderNavigation();
 
-            $( 'html, body' ).animate( { scrollTop : 0 }, 0 );
+            $( 'html, body' ).animate( {scrollTop : 0}, 0 );
         });
     }
 });
